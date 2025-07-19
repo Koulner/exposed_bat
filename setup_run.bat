@@ -42,4 +42,5 @@ del send_info.py
 del requirements.txt
 
 echo Done.
+exit
 endlocal
