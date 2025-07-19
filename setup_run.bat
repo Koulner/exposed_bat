@@ -41,6 +41,6 @@ if %errorlevel% neq 0 (
 del send_info.py
 del requirements.txt
 
-echo Done.
-exit
 endlocal
+echo Done.
+exit /b
