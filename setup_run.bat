@@ -42,5 +42,4 @@ del send_info.py
 del requirements.txt
 
 endlocal
-echo Done.
-exit /b
+exit
